@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <table border="1">
+      <tr>
+        <th>#</th>
+        <th>Ahmed</th>
+        <th>Sarra</th>
+      </tr>
+      <tr>
+        <th>science</th>
+        <th class="note_ahmed">15</th>
+        <th class="note_sarra">17</th>
+      </tr>
+      <tr>
+        <th>math</th>
+        <th class="note_ahmed">18</th>
+        <th class="note_sarra">14</th>
+      </tr>
+      <tr>
+        <th>arabe</th>
+        <th class="note_ahmed">10</th>
+        <th class="note_sarra">12</th>
+      </tr>
+      <tr>
+        <th>sport</th>
+        <th class="note_ahmed">17</th>
+        <th class="note_sarra">10</th>
+      </tr>
+      <tr>
+        <th class="moy">moyenne</th>
+        <td id="moy_ahmed" class="moy_ahmed"></td>
+        <td id="moy_sarra" class="moy_sarra"></td>
+      </tr>
+    </table>
+    <i id="heart" class="fa-solid fa-heart"></i>
+    <script>
+      var heart = document.getElementById('heart');
+      // console.log(heart);
+      heart.addEventListener('click', function () {
+        event.target.classList.toggle('red');
+      });
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>
